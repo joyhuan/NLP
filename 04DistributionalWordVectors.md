@@ -5,7 +5,7 @@ Variability (multiple forms, similar meaning)
 ### How should we embed words? 
 distribution hypothesis: words that appear in similar contexts have similar meanigns (Joos, 1950; Harris, 1954; Firth, 1957)
 
-![Image of word embedding table](https://octodex.github.com/images/yaktocat.png)
+![Image of word embedding table](https://github.com/joyhuan/NLP/blob/main/word_embedding.png)
 
 - once we have word vectors, we can compute similarities! 
 - many ways to define similarity of two vectors

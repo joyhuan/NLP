@@ -22,4 +22,28 @@ distribution hypothesis: words that appear in similar contexts have similar mean
     - idf is computed for the context word 
         - document frequency = number of documents in which a word appears 
         - inverse of document frequency will be small for common words 
-        
+    - vector entry is then tf * idf
+- Pointwise Mutual Information (PMI)
+    - consider two rvs, X and Y 
+    - do two events X = x and Y = y occur together more often than if they were independent? 
+    - if independent, PMI = 0
+![Image of word embedding table](https://github.com/joyhuan/NLP/blob/main/PMI_word_vectors.png)
+    - Positive PMI? 
+        - some have found benefit by truncating PMI at 0 ("positive PMI")
+        - negative PMI: words occur toghether less than we would expect, i.e., they are anticorrelated 
+        - these anticorrelations may need more data to reliably estimate 
+        - however, negative PMIs do seem reasonable! 
+
+### Summary 
+- word vectors: the use of a vector of numbers to represent a word 
+- distributional word vectors: the use of distributional statistics (eg, word co-occurence counts) in defining word vectors 
+- different window sizes lead to different kinds of similarity in the vectors
+- many options for computing similarity of two vectors: 
+    - dot product is a simple starting point 
+    - cosine similarity accounts for vector length and works better for word vectors 
+- simple distributional vectors are ok, but modifying counts can help 
+- one method: scale down counts for common context words, usually with a variant of inverse document frequency (idf)
+- another method: pointwise mutual information (PMI)
+- PMI provides information about whether two events are independent 
+- view center and context word slots as random variables; words are events/outcomes of those random variables 
+- use PMI (center word, context word) values in place of counts for better word vectors

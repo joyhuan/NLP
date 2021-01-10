@@ -21,6 +21,7 @@
 - using scalar notation (computing a single prob p_i):
 ![Image of Softmax](https://github.com/joyhuan/NLP/blob/main/softmax.png)
 - what are the dimensionalities?
+
 ![Image of Dimensionalities](https://github.com/joyhuan/NLP/blob/main/dimensionalities.png)
 - what are the parameters in this model?
 - how many total params are in this model?
@@ -33,7 +34,9 @@
     - (logistic) sigmoid (bounded between 0 and 1)
     - rectified linear unit(ReLU) y = max(0,x)
 ### Why nonlinearities?
-network with 1 hidden layer: h' = W'h + b'
+network with 1 hidden layer: 
+
+h' = W'h + b'
 
 h = g(Wx + b)
 - if g is linear, then we can rewrite the above as a single affine transfromation (use distributivity of matrix multiplication)

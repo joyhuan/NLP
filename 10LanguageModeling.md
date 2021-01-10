@@ -16,8 +16,8 @@
 ### Importatn Detail: Modeling Length
 - a language model assigns probs to token sequences x 
     - x can be any length, so the probs should sum to 1 across all possible sequences of all possible lengths
-- usually length is modeled by including a "stop symbol" </s> at the end of the sequence and using "stopping probs"
-    - a "start symble" <s> is also assumed to be at the beginning 
+- usually length is modeled by including a "stop symbol" `</s>` at the end of the sequence and using "stopping probs"
+    - a "start symble"`<s>` is also assumed to be at the beginning 
 - our language model with start/stop symbols
 ![Image of language model with start/stop symbols](https://github.com/joyhuan/NLP/blob/main/start_stop_symbol.png)
 ### Why Stopping Probs?

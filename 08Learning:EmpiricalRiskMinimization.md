@@ -31,5 +31,5 @@ L = {very negative, negative, neutral, positive, very positive}
 
 - max-score loss: loss_maxscore(x,y,w) = -score(x,y,w)
 - perceptron loss: (underlying perceptron algo)
-![Image of loss functions](https://github.com/joyhuan/NLP/blob/main/loss_fcns.png)
+![Image of loss functions](https://github.com/joyhuan/NLP/blob/main/images/loss_fcns.png)
 - hinge loss: (underlying support vector machines, can be shown to be an upper bound on the cost loss)

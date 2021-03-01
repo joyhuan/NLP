@@ -5,7 +5,7 @@ Variability (multiple forms, similar meaning)
 ### How should we embed words? 
 distribution hypothesis: words that appear in similar contexts have similar meanigns (Joos, 1950; Harris, 1954; Firth, 1957)
 
-![Image of word embedding table](https://github.com/joyhuan/NLP/blob/main/word_embedding.png)
+![Image of word embedding table](https://github.com/joyhuan/NLP/blob/main/images/word_embedding.png)
 
 - once we have word vectors, we can compute similarities! 
 - many ways to define similarity of two vectors
@@ -27,7 +27,7 @@ distribution hypothesis: words that appear in similar contexts have similar mean
     - consider two rvs, X and Y 
     - do two events X = x and Y = y occur together more often than if they were independent? 
     - if independent, PMI = 0
-![Image of word embedding table](https://github.com/joyhuan/NLP/blob/main/PMI_word_vectors.png)
+![Image of word embedding table](https://github.com/joyhuan/NLP/blob/main/images/PMI_word_vectors.png)
     - Positive PMI? 
         - some have found benefit by truncating PMI at 0 ("positive PMI")
         - negative PMI: words occur toghether less than we would expect, i.e., they are anticorrelated 

@@ -25,4 +25,4 @@
 ### Perceptron -> Hinge
 ### Hinge Loss Subgradients for Linear Models
 - "cost-augmented inference/decoding"
-![Image of optimization functions](https://github.com/joyhuan/NLP/blob/main/optimization.png)
+![Image of optimization functions](https://github.com/joyhuan/NLP/blob/main/images/optimization.png)

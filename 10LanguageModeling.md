@@ -9,7 +9,7 @@
     - spelling/grammar correction:
     - assistive writing, dialogue systems, question answering, etc
 - goal: compute the probability of a sequence of words:
-![Image of language model](https://github.com/joyhuan/NLP/blob/main/language_model.png)
+![Image of language model](https://github.com/joyhuan/NLP/blob/main/images/language_model.png)
 ### Chain Rule 
 - factor joint probability into product of conditional probabilities
 - we have not yet made any independence assumptions
@@ -19,14 +19,14 @@
 - usually length is modeled by including a "stop symbol" `</s>` at the end of the sequence and using "stopping probs"
     - a "start symble"`<s>` is also assumed to be at the beginning 
 - our language model with start/stop symbols
-![Image of language model with start/stop symbols](https://github.com/joyhuan/NLP/blob/main/start_stop_symbol.png)
+![Image of language model with start/stop symbols](https://github.com/joyhuan/NLP/blob/main/images/start_stop_symbol.png)
 ### Why Stopping Probs?
 - need to ensure sum of probs = 1
 - consider removing stopping probs
 ### Without Stopping Probs
 ### Other Ways of Modeling Length
 - alternatively, we can model the length n explicitly (e.g., using a zero-truncated Poisson distrubtion)
-![Image of explicit length](https://github.com/joyhuan/NLP/blob/main/explicit_length.png)
+![Image of explicit length](https://github.com/joyhuan/NLP/blob/main/images/explicit_length.png)
 ### #stimating Language Model Probs
 - let's use maximum likelihood estimation(MLE)
 - problem: we'll never have enough data!
@@ -46,7 +46,7 @@
     - downside:
         - may not correlate with system performance on downstream tasks
 ### Prob of Held-out Data
-![Image of held-out data](https://github.com/joyhuan/NLP/blob/main/held_out_data.png)
+![Image of held-out data](https://github.com/joyhuan/NLP/blob/main/images/held_out_data.png)
 ### Prob -> Perplexity
 - the lower the perplexity, the better the model
 ### Perplexity as Branching Factor

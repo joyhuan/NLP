@@ -39,11 +39,11 @@ better handling for the rare events
 - normalize by total number of bigram types
 ### Kneser-Ney Smoothing
 - Interpolated Kneser-Ney:
-![Image of Kneser-Ney Smoothing](https://github.com/joyhuan/NLP/blob/main/Kneser-Ney.png)
+![Image of Kneser-Ney Smoothing](https://github.com/joyhuan/NLP/blob/main/images/Kneser-Ney.png)
 - this is the bigram version; recursive versions exist for higher orders
 ### Smoothing for Web-scale Models
 - "Stupid backoff" (Brants et al., 2007) 
-![Image of Stupid backoff](https://github.com/joyhuan/NLP/blob/main/stupid_backoff.png)
+![Image of Stupid backoff](https://github.com/joyhuan/NLP/blob/main/images/stupid_backoff.png)
 ### Close Vocabulary
 - if there are unknown words in the test data, smoothing does not help
     - prob of test data is still zero

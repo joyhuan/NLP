@@ -33,7 +33,7 @@
     - classify by choosing highest-scoring label
 ### Modeling, Inference, Learning 
 - our classifier framework: 
-![Image of word embedding table](https://github.com/joyhuan/NLP/blob/main/modeling_inference_learning.png)
+![Image of word embedding table](https://github.com/joyhuan/NLP/blob/main/images/modeling_inference_learning.png)
 
 - We will use this formulation throughout 
     - even when output space is exponentially large or unbounded (eg, machine translation)
